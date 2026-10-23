@@ -221,6 +221,23 @@ final class MySqlErrorCodes
     public const ER_WARN_DEPRECATED_YEAR_UNSIGNED = 3956;
     public const ER_CLONE_NETWORK_PACKET = 3957;
 
+    // Common application errors
+    public const ER_CON_COUNT_ERROR = 1040;
+    public const ER_WRONG_FIELD_WITH_GROUP = 1055;
+    public const ER_DUP_FIELDNAME = 1060;
+    public const ER_TOO_LONG_KEY = 1071;
+    public const ER_CANT_DROP_FIELD_OR_KEY = 1091;
+    public const ER_LOCK_WAIT_TIMEOUT = 1205;
+    public const ER_LOCK_DEADLOCK = 1213;
+    public const ER_CANNOT_ADD_FOREIGN = 1215;
+    public const ER_TRUNCATED_WRONG_VALUE = 1292;
+    public const ER_TRUNCATED_WRONG_VALUE_FOR_FIELD = 1366;
+    public const ER_FK_CANNOT_OPEN_PARENT = 1824;
+
+    // Client errors (raised by the driver, not the server)
+    public const CR_CONNECTION_ERROR = 2002;
+    public const CR_SERVER_GONE_ERROR = 2006;
+
     /**
      * Get error code description
      *
@@ -254,6 +271,19 @@ final class MySqlErrorCodes
             self::ER_WARN_DATA_OUT_OF_RANGE => 'Out of range value for column',
             self::ER_ROW_IS_REFERENCED_2 => 'Cannot delete or update a parent row: foreign key constraint fails',
             self::ER_NO_REFERENCED_ROW_2 => 'Cannot add or update a child row: foreign key constraint fails',
+            self::ER_CON_COUNT_ERROR => 'Too many connections',
+            self::ER_WRONG_FIELD_WITH_GROUP => 'Column not in GROUP BY (only_full_group_by)',
+            self::ER_DUP_FIELDNAME => 'Duplicate column name',
+            self::ER_TOO_LONG_KEY => 'Specified key was too long',
+            self::ER_CANT_DROP_FIELD_OR_KEY => "Can't drop column or key; it doesn't exist",
+            self::ER_LOCK_WAIT_TIMEOUT => 'Lock wait timeout exceeded',
+            self::ER_LOCK_DEADLOCK => 'Deadlock found when trying to get lock',
+            self::ER_CANNOT_ADD_FOREIGN => 'Cannot add foreign key constraint',
+            self::ER_TRUNCATED_WRONG_VALUE => 'Incorrect value',
+            self::ER_TRUNCATED_WRONG_VALUE_FOR_FIELD => 'Incorrect value for column',
+            self::ER_FK_CANNOT_OPEN_PARENT => 'Failed to open the referenced table',
+            self::CR_CONNECTION_ERROR => "Can't connect to MySQL server",
+            self::CR_SERVER_GONE_ERROR => 'MySQL server has gone away',
             default => 'Unknown MySQL error code'
         };
     }

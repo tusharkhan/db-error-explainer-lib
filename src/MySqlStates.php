@@ -22,6 +22,9 @@ final class MySqlStates
     
     // Authorization/Access Errors (28xxx)
     public const INVALID_AUTHORIZATION = '28000';
+    public const SERIALIZATION_FAILURE = '40001';
+    public const INVALID_DATETIME_FORMAT = '22007';
+    public const COLUMN_ALREADY_EXISTS = '42S21';
     
     // Connection Errors (08xxx)
     public const CONNECTION_EXCEPTION = '08000';

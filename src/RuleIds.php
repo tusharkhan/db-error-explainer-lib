@@ -197,6 +197,20 @@ final class RuleIds
     public const CLONE_DONOR_VERSION_MISMATCH = 'clone_donor_version_mismatch';
     public const CLONE_NETWORK_PACKET_ERROR = 'clone_network_packet_error';
 
+    // Common application errors
+    public const TOO_MANY_CONNECTIONS = 'too_many_connections';
+    public const ONLY_FULL_GROUP_BY = 'only_full_group_by';
+    public const DUPLICATE_COLUMN = 'duplicate_column';
+    public const KEY_TOO_LONG = 'key_too_long';
+    public const CANT_DROP_COLUMN_OR_KEY = 'cant_drop_column_or_key';
+    public const LOCK_WAIT_TIMEOUT = 'lock_wait_timeout';
+    public const DEADLOCK = 'deadlock';
+    public const FK_INCOMPATIBLE_COLUMNS = 'fk_incompatible_columns';
+    public const FK_PARENT_TABLE_MISSING = 'fk_parent_table_missing';
+    public const INCORRECT_VALUE = 'incorrect_value';
+    public const CONNECTION_REFUSED = 'connection_refused';
+    public const SERVER_GONE_AWAY = 'server_gone_away';
+
     /**
      * Private constructor to prevent instantiation
      */
