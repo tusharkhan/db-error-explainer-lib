@@ -1,11 +1,13 @@
 {
     "name": "tusharkhan/db-error-explainer-lib",
-    "description": "Shared library components for DB Error Explainer packages",
+    "description": "Error codes, SQLSTATEs and rule ids shared by the DB Error Explainer packages",
     "keywords": [
         "database",
         "mysql",
+        "postgresql",
+        "sqlite",
         "error-codes",
-        "helpers"
+        "sqlstate"
     ],
     "homepage": "https://github.com/tusharkhan/db-error-explainer-lib",
     "license": "MIT",
