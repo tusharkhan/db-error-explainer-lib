@@ -210,6 +210,10 @@ final class RuleIds
     public const INCORRECT_VALUE = 'incorrect_value';
     public const CONNECTION_REFUSED = 'connection_refused';
     public const SERVER_GONE_AWAY = 'server_gone_away';
+    public const CHECK_VIOLATION = 'check_violation';
+    public const DIVISION_BY_ZERO = 'division_by_zero';
+    public const QUERY_TIMEOUT = 'query_timeout';
+    public const SERIALIZATION_FAILURE = 'serialization_failure';
 
     /**
      * Private constructor to prevent instantiation
