@@ -214,6 +214,10 @@ final class RuleIds
     public const DIVISION_BY_ZERO = 'division_by_zero';
     public const QUERY_TIMEOUT = 'query_timeout';
     public const SERIALIZATION_FAILURE = 'serialization_failure';
+    public const FOREIGN_KEY_VIOLATION = 'foreign_key_violation';
+    public const READONLY_DATABASE = 'readonly_database';
+    public const CANNOT_OPEN_DATABASE = 'cannot_open_database';
+    public const NOT_A_DATABASE = 'not_a_database';
 
     /**
      * Private constructor to prevent instantiation
