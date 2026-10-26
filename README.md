@@ -2,7 +2,7 @@
 
 This package contains shared library components used by both the core and Laravel packages:
 
-- `Helpers.php` - Utility functions
+- `SqlState.php` - SQLSTATE class / subclass helpers
 - `MySqlErrorCodes.php` - MySQL error code constants
 - `MySqlStates.php` - MySQL SQLSTATE constants
 - `RuleIds.php` - Rule identifier constants
