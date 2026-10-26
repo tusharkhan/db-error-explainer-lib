@@ -1,16 +1,12 @@
 # DB Error Explainer - Shared Library
 
-This package contains shared library components used by both the core and Laravel packages:
+Constants shared by the core and Laravel packages. It is installed automatically; you don't need to require it.
 
-- `SqlState.php` - SQLSTATE class / subclass helpers
-- `MySqlErrorCodes.php` - MySQL error code constants
-- `MySqlStates.php` - MySQL SQLSTATE constants
-- `RuleIds.php` - Rule identifier constants
-
-## Installation
-
-This package is automatically required by the core and Laravel packages. No manual installation needed.
-
-## Namespace
+- `MySqlErrorCodes` - MySQL / MariaDB error codes with descriptions
+- `MySqlStates` - SQLSTATE values MySQL uses
+- `PgSqlStates` - PostgreSQL SQLSTATE codes and their classes
+- `SqliteErrorCodes` - SQLite result codes with descriptions
+- `SqlState` - splits a SQLSTATE into class and subclass
+- `RuleIds` - rule ids, shared across databases (e.g. `duplicate_entry`)
 
 All classes are under the `TusharKhan\DbErrorExplainer\Lib` namespace.
