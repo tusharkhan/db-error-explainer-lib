@@ -10,3 +10,7 @@ Constants shared by the core and Laravel packages. It is installed automatically
 - `RuleIds` - rule ids, shared across databases (e.g. `duplicate_entry`)
 
 All classes are under the `TusharKhan\DbErrorExplainer\Lib` namespace.
+
+## License
+
+MIT. See [LICENSE](LICENSE).

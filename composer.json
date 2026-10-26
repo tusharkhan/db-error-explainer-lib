@@ -7,6 +7,7 @@
         "error-codes",
         "helpers"
     ],
+    "homepage": "https://github.com/tusharkhan/db-error-explainer-lib",
     "license": "MIT",
     "authors": [
         {
